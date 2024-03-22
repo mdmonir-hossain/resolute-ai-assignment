@@ -55,7 +55,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="bg-[#F7D8A3] min-h-screen">
+    <div className="bg-[#121212] min-h-screen">
       <ToastContainer></ToastContainer>
       <motion.div
         initial={{ x: "-100vw" }}
@@ -68,7 +68,7 @@ const SignUp = () => {
         </Helmet>
 
         <div className="flex-1 lg:ml-3 lg:px-10 lg:py-20 justify-center items-center  rounded-lg ">
-          <h1 className="text-3xl text-center">Sign Up</h1>
+          <h1 className="text-3xl text-center text-white">Sign Up</h1>
           <form
             onSubmit={handleUserSignUp}
             className="flex max-w-md flex-col gap-4"
@@ -125,14 +125,14 @@ const SignUp = () => {
                 required
               />
             </div>
-            <button type="submit" className="btn bg-[#001C30] text-white ">
+            <button type="submit" className="btn bg-red-600 text-white ">
               Sign Up
             </button>
           </form>
           <hr className="w-3/4 mt-2" />
           <div className="flex gap-4 mt-2">
-            <h1>Alraedy Account?</h1>
-            <Link to="/login" className="text-sky-500 ">
+            <h1 className="text-white ">Alraedy have An Account?</h1>
+            <Link to="/login" className="text-sky-600">
               Sign in
             </Link>
           </div>
