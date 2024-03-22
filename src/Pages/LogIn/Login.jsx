@@ -22,7 +22,7 @@ const Login = () => {
     signInWithPopup(auth, googleProvider)
       .then((result) => {
         const user = result.user;
-        navigate(location?.state ? location.state : "/dashboard");
+        navigate(location?.state ? location.state : "/video");
         console.log(user);
       })
       .catch((error) => {
